@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="IP Adress:"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/ip1"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/ip2"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/ip3"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/ip4"
+                      android:hint="0..255"/>
+
+
+        </TableRow>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Mask:"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mask1"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mask2"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mask3"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mask4"
+                      android:hint="0..255"/>
+
+
+        </TableRow>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="IP LAN:"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lan1"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lan2"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lan3"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lan4"
+                      android:hint="0..255"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="IP CALC"
+            android:id="@+id/ipcalc"/>
+
+
+
+</LinearLayout>
