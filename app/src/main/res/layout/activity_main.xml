@@ -12,7 +12,9 @@
         <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
-                      android:id="@+id/ip1"
+                      android:id="@+id/ip0"
+                      android:inputType="number"
+
                       android:hint="0..255"/>
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
@@ -20,7 +22,7 @@
                       android:textSize="20dp"/>
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
-                      android:id="@+id/ip2"
+                      android:id="@+id/ip1"
                       android:hint="0..255"/>
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
@@ -29,7 +31,7 @@
 
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
-                      android:id="@+id/ip3"
+                      android:id="@+id/ip2"
                       android:hint="0..255"/>
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
@@ -37,7 +39,7 @@
                       android:textSize="20dp"/>
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
-                      android:id="@+id/ip4"
+                      android:id="@+id/ip3"
                       android:hint="0..255"/>
 
 
@@ -48,12 +50,21 @@
         <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
+                      android:id="@+id/mask0"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
                       android:id="@+id/mask1"
                       android:hint="0..255"/>
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="."
                       android:textSize="20dp"/>
+
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
                       android:id="@+id/mask2"
@@ -62,26 +73,26 @@
                       android:layout_height="wrap_content"
                       android:text="."
                       android:textSize="20dp"/>
-
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
                       android:id="@+id/mask3"
-                      android:hint="0..255"/>
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="."
-                      android:textSize="20dp"/>
-            <EditText android:layout_width="70dp"
-                      android:layout_height="wrap_content"
-                      android:id="@+id/mask4"
                       android:hint="0..255"/>
 
 
         </TableRow>
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
+                  android:id="@+id/tvlan"
                   android:text="IP LAN:"/>
         <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:layout_width="70dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lan0"
+                      android:hint="0..255"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="."
+                      android:textSize="20dp"/>
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
                       android:id="@+id/lan1"
@@ -90,6 +101,7 @@
                       android:layout_height="wrap_content"
                       android:text="."
                       android:textSize="20dp"/>
+
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
                       android:id="@+id/lan2"
@@ -98,25 +110,18 @@
                       android:layout_height="wrap_content"
                       android:text="."
                       android:textSize="20dp"/>
-
             <EditText android:layout_width="70dp"
                       android:layout_height="wrap_content"
                       android:id="@+id/lan3"
-                      android:hint="0..255"/>
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="."
-                      android:textSize="20dp"/>
-            <EditText android:layout_width="70dp"
-                      android:layout_height="wrap_content"
-                      android:id="@+id/lan4"
                       android:hint="0..255"/>
 
 
         </TableRow>
 
     </TableLayout>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="IP CALC"
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IP CALC"
             android:id="@+id/ipcalc"/>
 
 
